@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>观看广告并下载壁纸</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+        }
+        #downloadButton {
+            display: none;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #adContainer {
+            margin: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>观看广告以下载壁纸</h1>
+
+    <div id="adContainer">
+        <!-- 假设这里是广告内容，你可以嵌入广告平台的广告代码 -->
+        <p>广告加载中...</p>
+        <!-- 你可以在这里嵌入 Tapjoy 或 AdMob 的广告代码 -->
+    </div>
+
+    <script>
+        // 模拟广告加载过程
+        function loadAd() {
+            // 这里可以是调用 Tapjoy 或 AdMob 提供的广告代码 API
+            alert('展示广告');
+            
+            // 广告观看完毕后，显示下载按钮
+            document.getElementById('downloadButton').style.display = 'block';
+        }
+
+        // 模拟广告加载2秒后展示下载按钮
+        setTimeout(loadAd, 2000); // 假设广告展示2秒后显示下载按钮
+
+        // 下载按钮点击事件
+        document.getElementById('downloadButton').onclick = function() {
+            window.location.href = "https://your-wallpaper-url.jpg"; // 替换为壁纸下载链接
+        };
+    </script>
+
+    <button id="downloadButton">下载壁纸</button>
+
+</body>
+</html>
