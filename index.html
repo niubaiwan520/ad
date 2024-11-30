@@ -25,6 +25,11 @@
             background-color: #f0f0f0;
             border-radius: 5px;
         }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -32,26 +37,23 @@
     <h1>点击广告查看并下载壁纸</h1>
 
     <div id="adContainer">
-        <p>广告加载中...</p>
-        <!-- 此处会插入广告内容 -->
+        <!-- 这里将加载 BitLabs 广告 -->
+        <iframe id="adFrame" src="https://web.bitlabs.ai/?uid=user123&token=5003fcb3-1b47-4575-b30c-e88b3c9f54d8"></iframe>
     </div>
 
     <script>
-        // 模拟广告加载
+        // 模拟广告加载完成，显示下载按钮
         function loadAd() {
-            // 模拟加载广告的行为
-            alert('展示广告');
-            
-            // 广告加载完成，展示下载按钮
+            // 广告加载完成后，显示下载按钮
             document.getElementById('downloadButton').style.display = 'block';
         }
 
-        // 模拟广告展示延时
-        setTimeout(loadAd, 2000); // 延时2秒后展示广告
+        // 延时2秒后模拟广告加载
+        setTimeout(loadAd, 2000);
 
         // 下载按钮的点击事件
         document.getElementById('downloadButton').onclick = function() {
-            window.location.href = "https://your-wallpaper-url.jpg"; // 替换为实际壁纸URL
+            window.location.href = "https://securityarsenal.wed2c.com"; // 替换为实际壁纸URL
         };
     </script>
 
