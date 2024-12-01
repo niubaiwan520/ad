@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     
     <!-- Impact 站点验证代码 -->
     <meta name='impact-site-verification' value='fd9fec63-5331-4165-aa05-6096b2099b99'>
-    
+
     <!-- Impact 统计代码 -->
     <script type="text/javascript">
         (function(i,m,p,a,c,t){
@@ -22,7 +22,7 @@
         impactStat('transformLinks');
         impactStat('trackImpression');
     </script>
-
+    
     <style>
         body {
             text-align: center;
@@ -57,7 +57,7 @@
 
     <div id="adContainer">
         <!-- 这里将加载 BitLabs 广告 -->
-        <iframe id="adFrame" src="https://web.bitlabs.ai/?uid=user123&token=5003fcb3-1b47-4575-b30c-e88b3c9f54d8" onload="loadAd()"></iframe>
+        <iframe id="adFrame" src="https://web.bitlabs.ai/?uid=user123&token=5003fcb3-1b47-4575-b30c-e88b3c9f54d8"></iframe>
     </div>
 
     <script>
@@ -67,9 +67,11 @@
             document.getElementById('downloadButton').style.display = 'block';
         }
 
+        // 延时2秒后模拟广告加载
+        setTimeout(loadAd, 2000);
+
         // 下载按钮的点击事件
         document.getElementById('downloadButton').onclick = function() {
-            // 在这里替换为实际的壁纸URL，或者基于广告内容动态生成链接
             window.location.href = "https://securityarsenal.wed2c.com"; // 替换为实际壁纸URL
         };
     </script>
